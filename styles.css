@@ -7,7 +7,9 @@
   --main-white: #eeffff;
 }
 
-
+* {
+  box-sizing: border-box;
+}
 body {
   background: linear-gradient(to right, #011, black);
   background-color: black;
@@ -30,13 +32,13 @@ button {
 }
 
 header {
-  padding: 10px 20px;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #9aa;
   
   & button {
-    width: 5em;
+    width: 3em;
     font-size: 1.7em;
   }
 
@@ -44,11 +46,13 @@ header {
 
 #intro-text {
   max-width: 50vw;
+  color: var(--light-main);
 }
 
 nav {
   margin: 0;
   display: flex;
+  max-width: 100vw;
   position: sticky;
   top: 0;
   background-color: var(--bg-main);
@@ -56,8 +60,12 @@ nav {
   
   & button {
     flex: 1;
+    font-size: 0.7em;
     background: linear-gradient(to right, #0fd2, #0000);
   }
+}
+nav > * {
+  min-width: 0;
 }
 
 #shows {
@@ -66,8 +74,7 @@ nav {
 }
 
 button:hover {
-  background-color: #44ffe6;
-  color: black;
+  background-color: var(--main);
 }
 
 .con-emdash {
@@ -153,6 +160,10 @@ footer {
   & ul {
     list-style: none;
   }
+}
+
+.advice {
+  text-align: center;
 }
 
 hr {
