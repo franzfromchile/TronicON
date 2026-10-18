@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" href="general assets/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>TronicON</title>
+  </head>
+  <body>
+    <header>
+      <img src="icon.png" height="100" alt="TronicON">
+      <button id="menu">☰</button>
+    </header>
+    <nav>
+      <button onclick="document.getElementById('cepf2026').scrollIntoView({behavior: 'smooth'})">CePF2026</button>
+      <button onclick="document.getElementById('fhtv2026').scrollIntoView({behavior: 'smooth'})">Fiesta Halloween</button>
+      <button onclick="document.getElementById('nov6').scrollIntoView({behavior: 'smooth'})">06 Nov</button>
+      <button onclick="document.getElementById('bfos2026').scrollIntoView({behavior: 'smooth'})">BFOS2026</button>
+    </nav>
+    <div class="entrada">
+      <span class="con-emdash">Monitoreo en vivo · TRONIC · Internacional</span>
+      <h1 class="gigante">TRONIC<br><span class="outlined">EN VIVO</span></h1>
+      <p id="intro-text">kieres saber si un concierto de TRONIC está confirmado, se viene o si está en VIVO? este es el lugar.</p>
+      <button id="to-shows" onclick="document.getElementById('shows').scrollIntoView({behavior: 'smooth'})">SHOWS</button>
+    </div>
+    <main>
+      <h2 id="shows">SHOWS</h2>
+      
+      <div class="show" id="cepf2026">
+        <h4>TRONIC · Contra el Piso Fest 2026 · 23/10/26</h4>
+        <div class="estadoactivo">
+          <span>
+            <span class="iconoproximo">🔔</span> Próximo
+          </span>
+        </div>
+
+        <div class="estadoactivo" hidden>
+          <span>
+            <span class="vivo">🔴</span>EN VIVO
+          </span>
+        </div>
+      </div>
+
+      <div class="show" id="fhtv2026">
+        <h4>TRONIC · Fiesta Halloween · 31/10/26</h4>
+        <span class="estadoactivo">✅ Confirmado</span>
+      </div>
+
+      <div class="show" id="nov6">
+        <h4>TRONIC · ? · 06/11/26</h4>
+        <span class="estadoactivo">✅ Confirmado</span>
+      </div>
+
+      <div class="show" id="bfos2026">
+        <h4>TRONIC · Bierfest Oktober 2026 · 07/11/26</h4>
+        <span class="estadoactivo">✅ Confirmado</span>
+      </div>
+    </main>
+    <footer>
+      <img src="tronic-2026_fff-000.jpg" alt="TRONIC">
+      <ul>
+        <li>Instagram</li>
+        <li>YouTube</li>
+        <li>Spotify</li>
+        <li>Apple Music</li>
+      </ul>
+      <h3>Mis redes</h3>
+      <ul>
+        <li>@franzieki.7w7 · personal</li>
+        <li>@FRANZ_NESS · leak y anuncios TRONIC</li>
+      </ul>
+      <hr>
+      <div class="advice">© 2026 Franzieki · FRANZ_NESS.<br>
+        Los derechos sobre la información original de este sitio pertenecen a sus autores. Las marcas, los diseños y el material de terceros pertenecen a sus respectivos titulares.
+      </div>
+    </footer>
+  </body>
+</html>

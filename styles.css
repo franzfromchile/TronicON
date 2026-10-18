@@ -1,0 +1,162 @@
+:root {
+  --main: #33beac;
+  --submain: #00ffe6dd;
+  --dark-main: #7dada4;
+  --light-main: #bafff6;
+  --bg-main: #122;
+  --main-white: #eeffff;
+}
+
+
+body {
+  background: linear-gradient(to right, #011, black);
+  background-color: black;
+  color: var(--main-white);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+    all: unset;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #0000;
+    border: 1px solid var(--main)
+
+    
+}
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #9aa;
+  
+  & button {
+    width: 5em;
+    font-size: 1.7em;
+  }
+
+}
+
+#intro-text {
+  max-width: 50vw;
+}
+
+nav {
+  margin: 0;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-main);
+  border: 1px solid #588;
+  
+  & button {
+    flex: 1;
+    background: linear-gradient(to right, #0fd2, #0000);
+  }
+}
+
+#shows {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #44ffe6;
+  color: black;
+}
+
+.con-emdash {
+  color: var(--main);
+}
+
+.con-emdash::before {
+  content: "— "
+}
+
+.outlined {
+  color: rgba(0,0,0,0);
+  -webkit-text-stroke: 1px white;
+}
+
+.gigante {
+  font-size: 4em;
+}
+
+.entrada {
+  padding: 20px;
+  background-image: url("fondo-entrada.jpg");
+  background-size: cover;
+  
+  
+}
+
+main {
+  padding: 20px;
+}
+
+.show {
+  color: var(--main-white);
+  padding: 15px;
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  margin: 20px 0;
+  max-width: 90vw;
+  background-color: black;
+  
+  & h4 {
+    margin: 5px 0;
+    font-weight: lighter;
+    color: var(--main-white);
+  }
+
+}
+
+.estadoactivo {
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+@keyframes proximo {
+  0% { transform: rotate(-6deg);}
+  20% { transform: rotate(10deg);}
+  40% { transform: rotate(-14deg);}
+  60% { transform: rotate(8deg);}
+  80% { transform: rotate(-4deg);}
+  100% { transform: rotate(0);}
+}
+
+.iconoproximo {
+  display: inline-block;
+  animation: proximo 1s ease infinite;
+}
+
+.vivo {
+  animation: pulsar 1s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes pulsar {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(0.5); }
+  100% { transform: scale(1.0); }
+}
+
+footer {
+  color: var(--main-white);
+  margin: 20px 20px;
+
+  & ul {
+    list-style: none;
+  }
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--dark-main);
+}
