@@ -99,8 +99,7 @@ button:hover {
   padding: 20px;
   background-image: url("fondo-entrada.jpg");
   background-size: cover;
-  
-  
+  background-position: center;
 }
 
 main {
