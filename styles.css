@@ -165,7 +165,9 @@ footer {
 }
 
 hr {
+  margin: 0;
+  padding: 0;
   border: none;
-  height: 2px;
+  height: 1px;
   background-color: var(--dark-main);
 }
