@@ -10,7 +10,10 @@
   <body>
     <header>
       <img src="icon.png" height="100" alt="TronicON">
-      <button id="menu">☰</button>
+      <button id="menubtn" onclick="menu.hidden = !menu.hidden">☰</button>
+      <div id="menu" hidden>
+        <a href="blog.html">Blog</a>
+      </div>
     </header>
     <nav>
       <button onclick="document.getElementById('cepf2026').scrollIntoView({behavior: 'smooth'})">CePF2026</button>
