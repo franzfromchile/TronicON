@@ -11,12 +11,14 @@
   box-sizing: border-box;
 }
 body {
+  width: 394px;
+  margin: 0;
+  zoom: calc(100vw / 394px);
   background: linear-gradient(to right, #011, black);
   background-color: black;
   color: var(--main-white);
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
-  margin: 0;
 }
 
 button {
@@ -39,7 +41,18 @@ header {
     width: 3em;
     font-size: 1.7em;
   }
+}
 
+#menu {
+  padding: 20px;
+  position: absolute;
+  background-color: black;
+  border: 1px solid var(--submain);
+  border-radius: 5px;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 #intro-text {
