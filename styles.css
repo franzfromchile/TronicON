@@ -178,9 +178,10 @@ footer {
 }
 
 hr {
-  margin: 0;
+  margin: 0 0 1em;
   padding: 0;
   border: none;
   height: 1px;
   background-color: var(--dark-main);
+  
 }
