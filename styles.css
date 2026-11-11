@@ -185,3 +185,7 @@ hr {
   background-color: var(--dark-main);
   
 }
+.disclaimer {
+  padding: 10px;
+  border: 2px dashed var(--main);
+}
