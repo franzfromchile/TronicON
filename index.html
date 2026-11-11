@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="icon" href="general assets/icon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="urgente.css">
     <title>TronicON</title>
   </head>
   <body>
@@ -16,9 +16,9 @@
       </div>
     </header>
     <nav>
-      <span hidden>¡Sin conciertos!</span>
-      <button onclick="document.getElementById('nov6').scrollIntoView({behavior: 'smooth'})">Conce</button>
-      <button onclick="document.getElementById('bfos2026').scrollIntoView({behavior: 'smooth'})">BFOS2026</button>
+      <span style="margin: 1em auto;">¡Sin conciertos!</span>
+      <button onclick="document.getElementById('nov6').scrollIntoView({behavior: 'smooth'})" hidden>Conce</button>
+      <button onclick="document.getElementById('bfos2026').scrollIntoView({behavior: 'smooth'})" hidden>BFOS2026</button>
     </nav>
     <div class="entrada">
       <span class="con-emdash">Monitoreo en vivo · TRONIC · Internacional</span>
@@ -29,14 +29,15 @@
     <main>
       <h2 id="shows">SHOWS</h2>
 
-      <h3 hidden>TRONIC ha finalizado su gira 25 Aniversario oficialmente.</h3>
-      
-      <div class="show" id="nov6">
+      <h4>TRONIC ha finalizado su gira 25 Aniversario oficialmente.</h4>
+      <img src="../ultimas-fechas.png" style="max-width: 90%;">
+      <span style="font-size: 0.8em; text-align: center; opacity: 50%;">(video anunciando La Bodeguita De Nicanor y Bierfest Oktober Stgo. 2026.)</span>
+      <div hidden class="show" id="nov6">
         <h4>TRONIC · Concepción · 06/11/26</h4>
         <span class="estadoactivo">⚫ Terminado</span>
       </div>
 
-      <div class="show" id="bfos206">
+      <div hidden class="show" id="bfos206">
         <h4>TRONIC · Bierfest Oktober 2026 · 07/11/26</h4>
         <span class="estadoactivo">⚫ Terminado</span>
       </div>
