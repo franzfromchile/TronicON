@@ -3,20 +3,23 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="icon" href="imgs/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="general assets/icon.png">
+    <link rel="stylesheet" href="/index-styles.css">
+    <meta name="description" content="[En desarrollo] Consulta aquí el estado activo de los conciertos de TRONIC. ❔. Rumor ❕. Posible ✅. Confirmado 🔔. Próximo 🔴. EN VIVO ⚫. Terminado.">
     <title>TronicON</title>
   </head>
   <body>
     <header>
-      <img src="icon.png" height="100" alt="TronicON">
-      <button id="menubtn" onclick="menu.hidden = !menu.hidden">☰</button>
-      <div id="menu" hidden>
-        <a href="blog.html">Blog</a>
+      <a href="index.html"><img src="icon.png" height="100" alt="TronicON"></a>
+      <div class="sidememu">
+        <button id="sidemenubtn" onclick="menu.hidden = !menu.hidden">☰</button>
+        <div id="menu" hidden>
+          <a href="blog.html">Blog</a>
+        </div>
       </div>
     </header>
     <nav>
-      <span style="margin: 1em auto;">¡Sin conciertos próximos!</span>
+      <span class="centered">¡Ups, Sin conciertos!</span>
     </nav>
     <div class="hero">
       <span class="con-emdash">Monitoreo en vivo · TRONIC · Internacional</span>
@@ -27,10 +30,19 @@
     <main>
       <fieldset class="disclaimer">
         <legend>! Disclaimer</legend>
-        <span>Este sitio está en pleno desarrollo y lo lanzé para poder hacer posible su propósito, por lo que todos los cambios son manuales en hora. Intento ser lo más puntual posible. Espero poder implementar código lo más pronto posibor para que sea más automatizado, puntual y así tener todo a la hora. Gracias.</span>
+        <span>Este sitio está en pleno desarrollo y lo lanzé para poder hacer posible su propósito, por lo que todos los cambios son manuales en hora. Intento ser lo más puntual posible. Espero poder implementar código lo más pronto posible para que sea más automatizado, puntual y así tener todo a la hora. Gracias.</span>
       </fieldset>
       <h2 id="shows">SHOWS</h2>
 
+      <div class="nuevoconcierto">
+        <h2>NUEVO CONCIERTO</h2>
+        <div class="nuevoconciertocontent">
+          <p>No hay conciertos</p>
+        </div>
+        <button onclick="document.getElementById('nov6').scrollIntoView({behavior: 'smooth'})" id="nuevoshowvermas">:-(</button>
+      </div>
+      
+      
       <h4>TRONIC ha finalizado su gira 25 Aniversario oficialmente.</h4>
       <img src="imgs/ultimas-fechas.png" style="max-width: 90%;">
       <span style="font-size: 0.8em; text-align: center; opacity: 50%;">(video anunciando La Bodeguita De Nicanor y Bierfest Oktober Stgo. 2026.)</span>
@@ -38,23 +50,29 @@
         <h4>TRONIC · Concepción · 06/11/26</h4>
         <span class="estadoactivo">⚫ Terminado</span>
       </div>
-
-      <div hidden class="show" id="bfos206">
-        <h4>TRONIC · Bierfest Oktober 2026 · 07/11/26</h4>
-        <span class="estadoactivo">⚫ Terminado</span>
-      </div>
     </main>
     <footer>
-      <img src="tronic-2026_fff-000.jpg" alt="TRONIC" height="30">
-      <ul>
-        <li>Instagram</li>
-        <li>YouTube</li>
-        <li>Spotify</li>
-        <li>Apple Music</li>
-      </ul>
+      <img src="tronic-2026_fff-000.jpg" alt="TRONIC" height="30" id="logotronic">
+      <div id="rrss">
+        <a href="https://instagram.com/tronicfromchile">
+          <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/@TRONICfromchile">
+          <img src="youtube.png" alt="YouTube">
+        </a>
+        <a href="tiktok.com/@tronicfromchile">
+          <img src="tiktok.png">
+        </a>
+        <a href="https://open.spotify.com/artist/5HkHDnrE6HW1FsD5gf8nrw?si=LSuQ-Q0vRRmX8JjqFM2p8g&utm_source=copy-link">
+          <img src="spotify.png" alt="Spotijuay" height="40">
+        </a>
+        <a href="https://music.apple.com/cl/artist/tronic/1227801035">
+          <img src="applemusic.png" alt="Apple Music">
+        </a>
+      </div>
       <hr>
       <div class="advice">© 2026 Franzieki · FRANZ_NESS.<br>
-        Los derechos sobre la información original de este sitio pertenecen a sus autores. Las marcas, los diseños y el material de terceros pertenecen a sus respectivos titulares.<br>* No existe alguna asociación con Soybooking.
+        Los derechos sobre la información original de este sitio pertenecen a sus autores. Las marcas, los diseños y el material de terceros pertenecen a sus respectivos titulares. No existe relación con TRONIC ni SoyBooking.
       </div>
     </footer>
   </body>
