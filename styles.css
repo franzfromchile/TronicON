@@ -1,4 +1,280 @@
+:root {
+  --accent: #6D289C;
+  --submain: #8F5CC0DD;
+  --secondary: #4E1C7A;
+  --darker: #3B1760;
+  --light-main: #B89ADF;
+  --bg-main: #200B2E;
+  --main-white: #E6D9F7;
+}
 
+body {
+  width: 394px;
+  margin: 0;
+  zoom: calc(100vw / 394px);
+  background: linear-gradient(to right, #0B040F, black);
+  background-color: (--bg-main);
+  color: var(--main-white);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+/* MAIN TAGS */
+header {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--darkar);
+  
+  & button {
+    width: 3em;
+    font-size: 1.7em;
+  }
+}
+main {
+  padding: 20px;
+}
+footer {
+  color: var(--main-white);
+  margin: auto 20px 7em;
+
+  & ul {
+    list-style: none;
+  }
+}
+
+
+button {
+  all: unset;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: #0000;
+  border: 1px solid var(--accent);
+}
+button:active {
+  background-color: var(--accent);
+  user-select: none;
+}
+
+
+
+/* MENU */
+#sidemenubtn {
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+#menu {
+  background-color: var(--bg-main);
+  position: absolute;
+  z-index: 20;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+#intro-text {
+  max-width: 60vw;
+  color: var(--main-white);
+}
+
+
+/* NAV */
+nav {
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  height: 3em;
+  width: 90%;
+  position: fixed;
+  bottom: 10px;
+  background-color: black;
+  border: 1px solid var(--darker);
+  border-radius: 40px;
+  z-index: 10;
+  animation: resaltarnav 1s ease 2;
+  
+  & button {
+    flex: 1;
+    font-size: 0.7em;
+    border: 1px solid #0000;
+    border-radius: 40px;
+    color: var(--secondary);
+    animation: resaltarnavbtn 1s ease 1 forwards;
+  }
+}
+nav button:active {
+  color: #FFF;
+}
+nav > * {
+  min-width: 0;
+}
+@keyframes resaltarnav {
+  0% { border: 1px solid (--darker);}
+  50% { border: 1px solid var(--light-main);}
+  100% { border: 1px solid var(--darker);}
+}
+@keyframes resaltarnavbtn {
+  0% { color: var(--secondary);}
+  50% { color: var(--light-main);}
+  100% { color: var(--secondary);}
+}
+
+
+
+#shows {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.con-emdash {
+  color: var(--light-main);
+}
+
+.con-emdash::before {
+  content: "— ";
+  color: var(--light-main);
+}
+
+.outlined {
+  color: rgba(0,0,0,0);
+  -webkit-text-stroke: 1px white;
+}
+
+.gigante {
+  font-size: 4em;
+}
+
+/* ENTRADA */
+.hero {
+  padding: 20px;
+  background-image: url("fondo-entrada.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@keyframes entradaimg {
+  from {
+    opacity: 10%;
+    transform: scale(3);
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+
+
+.nuevoshow {
+  color: var(--light-main);
+}
+.show {
+  color: var(--main-white);
+  padding: 15px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  margin: 40px 0;
+  max-width: 90vw;
+  background-color: black;
+  
+  & h4 {
+    margin: 5px 0;
+    font-weight: lighter;
+    color: var(--main-white);
+  }
+
+}
+
+
+/* ESTADO ACTIVO */
+.estadoactivo {
+  margin: 10px 0;
+  font-size: 2em;
+}
+@keyframes proximo {
+  0% { transform: rotate(-6deg);}
+  20% { transform: rotate(10deg);}
+  40% { transform: rotate(-14deg);}
+  60% { transform: rotate(8deg);}
+  80% { transform: rotate(-4deg);}
+  100% { transform: rotate(0);}
+}
+.iconoproximo {
+  display: inline-block;
+  animation: proximo 1s ease infinite;
+}
+.vivo {
+  animation: pulsar 1s ease-in-out infinite;
+  display: inline-block;
+}
+@keyframes pulsar {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(0.5); }
+  100% { transform: scale(1.0); }
+}
+
+
+
+
+
+.advice {
+  text-align: center;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background-color: var(--dark-main);
+}
+
+#logotronic {
+  display: block;
+  margin: 0 auto;
+}
+#rrss {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+
+  & a img {
+    height: 30px;
+  }
+}
+
+.nuevo {
+  box-shadow: 0 0 20px 0 #70F;
+  border: 1px solid var(--light-main);
+}
+
+.nuevoconcierto {
+  margin: 0;
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+.nuevoconciertocontent {
+  display: flex;
+}
+.nuevoconciertocontent > p {
+  flex: 2;
+  padding-right: 10px;
+}
+.nuevoconciertocontent > img {
+  flex: 0;
+  transform: rotate(3deg);
+}
+.nuevoconcierto > button {
+  width: 100%;
+  padding: 10px 0;
+  display: inline-block;
+  margin: 1em auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: var(--accent);
 }
 
 .centered {
